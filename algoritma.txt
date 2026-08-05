@@ -1,0 +1,27 @@
+menambah kolom username di tabel users
+1. tambah baris username di migrasi tabel users 
+2. tambah baris di UserFactory
+3. migrasi fresh
+
+Relasi one to one (satu satu story hanya dimiliki satu user)
+1. relasi / join dari tabel story ke tabel user dengan foreign key yang ditambah atribut untuk relasi pada file migrasi
+2. tes di tinker 
+
+mengambil username sebagai parameter di route
+1. membuat link yang mengarah route yang dituju serta menambah function di model dan kolom username
+
+laravel debuger
+package untuk melihat kecepatan performa ketika memanggil data atau melakukan query
+
+Memanggil data akhir (last()) gunakan get, tetapi jika select * seperti biasa cukup properti all()
+
+N + 1 dapat mengurangi kelebihan query pada relasi dalam laravel 
+
+eager loading : dengan menambah properti 'with(nama_relasi)' ketika query. kebalikan lazy loading. jika relasi yang dimasukkan lebih dari satu maka perlu ditambah array ke dalam parameter
+
+eager loading dapat diatur default di model tanpa perlu memamangilnya di route
+
+lazy eager loading : menggunakan perintah "load()"  ketika parent dari kelas (model) sudah dipanggil kedalam variabel. jika relasi lebih dari satu tidak perlu menambah array
+
+
+
